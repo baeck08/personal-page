@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Me</title>
+
+<link href='http://fonts.googleapis.com/css?family=Sail' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Italianno' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Over+the+Rainbow' rel='stylesheet' type='text/css'>
+<style type="text/css">
+
+#header { 
+  margin: 0 auto;
+  width:950px;
+  height:130px;
+    }
+
+#header a{
+    text-decoration: none;
+    color: #FF6666;
+    padding-left: 260px;
+    font-size: 115px;
+    font-family: 'Italianno', cursive;
+    text-align: center;
+   }
+
+#menu {
+  margin: 0 auto;
+  width: 950px;
+  border-top:6px dotted #33CCCC;
+  border-bottom: 6px dotted #33CCCC;
+  border-radius:20px;
+  text-align: center;
+  }
+
+#menu li {
+  display:inline;
+}
+
+#menu a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #FF6666;
+  font-family: 'Sail', cursive;
+  display:inline-block;
+  padding:10px;
+      }
+
+#outerWrapper {
+  margin: 0 auto;
+  height: 950px;
+  width: 950px;
+}
+
+#wrapper {
+  margin: 0 auto;
+  padding: 20px 0px 0px 20px; 
+  width:950px;
+ 
+}
+#aside{
+  margin: 0 auto;
+  background-image: url(17349_1251594408385_799031_n.jpg);
+  border-style: ridge;
+  border-width:5px;
+  background-repeat: none;
+  padding-top: 10px;
+  width: 180px;
+  height: 230px;
+  float:left;
+  }
+
+#main {
+  float: left;
+  width: 750px;
+  padding-left: 10px;
+ 
+
+  } 
+
+p {
+  font-family: 'Over the Rainbow', cursive;
+  font-size: 17px;
+  }
+
+/* =============================================================================
+10. Contact Panel
+============================================================================= */
+#contactform{
+        margin:0 auto;
+    padding-right:20px;
+}
+.info_fieldset{
+        padding:0;
+        margin:0 auto;
+        bottom:5px;
+        background: #FF9999;
+        border: 0px;
+        float:left;
+       }        
+label        {float:left;width:100%;padding:0 0 2px;}
+input[type="text"]
+textarea        {width:100%;}
+input[type="submit"]        {padding:0;width:100%;margin:5px 0 0;}
+
+/*FORM ELEMENTS*/
+label {
+    cursor: pointer;
+        margin-top:7px;
+        font-family:'Oswald', Arial, Helvetica, sans-serif;
+        font-style:normal;
+        font-weight:400;
+        color: #292929;
+}
+input,textarea {outline: none;}
+button, input, select, textarea {
+    margin: 0;
+        vertical-align: baseline;
+        *vertical-align: middle;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+        -webkit-appearance: button;
+}
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+}
+input[type="text"] {
+        border:2px solid #cfd0ca;
+        font:normal 13px;
+        color:#999;
+        padding:3px 10px;
+        width:100%;
+        -webkit-border-radius:25px;-moz-border-radius:25px;border-radius:25px;
+}
+textarea        {
+        border:2px solid #cfd0ca;
+        font:normal 13px;
+        color:#999;
+        padding:3px 10px;
+        width:100%;
+        -webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px;  
+        resize: none;
+}
+input[type="text"]:focus,
+textarea:focus         {
+        border-color:#E6906D;
+        -webkit-transition:         all .10s ease-in;
+        -moz-transition:                all .10s ease-in;
+        -o-transition:                        all .10s ease-in;
+        transition:                         all .10s ease-in;
+}
+/* Submit Button */
+input[type="submit"]                 {
+        color:#FFF;
+        width:50%;
+        float:right;
+        margin-right:-20px;
+        background-color:#E6906D;
+        -webkit-border-radius:25px;-moz-border-radius:25px;border-radius:25px;
+        padding:6px 10px;
+        box-shadow:none;
+        border:none;
+}
+input[type="submit"]:hover                 {
+        background:#cfd0ca;
+        -webkit-transition: all 0.2s linear;
+     -moz-transition: all 0.2s linear;
+     -o-transition: all 0.2s linear;
+     transition: all 0.2s linear;
+}
+/* CSS for Error notification */
+.notification_error{
+    border: 1px solid #f1dfc5;
+        width:100%;
+    height: auto;
+        color: #ca5702;
+    padding: 10px;
+    margin: 10px auto;
+    text-align:left;
+    -webkit-border-radius:7px;-moz-border-radius:7px;border-radius:7px;
+    margin-bottom:5px;
+}
+/* CSS for Successfully sent notification */
+.notification_ok{
+    border: 1px #cbcf8e solid;
+        width:100%;
+    height: auto;
+        padding: 10px;
+    margin:0 auto;
+    background: #f5f9fd;
+    text-align: center;
+        -webkit-border-radius:7px;-moz-border-radius:7px;border-radius:7px;
+        margin-bottom:5px;
+}
+/* Gogle Map */
+.gmap{
+    width: 95%;
+    max-width: 540px;
+    min-height: 250px;
+    background: #eee;
+    margin-top:15px;
+          border-width: 2px;
+        border-style: solid;
+        border-color: #cfd0ca;
+        float:left;
+}
+.gmap img{
+    vertical-align: top;
+    max-width: 95%;
+}
+</style>
+</head>
+ <body>
+<div id="outerWrapper">
+    <div id="header">
+       <a class="header_title" href="header.html">Brittany Eck</a>
+        </div> <!--/header --> 
+        
+      <nav id="menu">
+      <a class="menu_item" href="header.html">About Me</a>
+      <a class="menu_item" href="entry.html">Artwork</a>
+      <a class="menu_item" href="entry.html">Photo Gallery</a>
+      <a class="menu_item" href="contact_form.html">Contact Me</a>
+        </nav>  <!--/nav-->
+          <div id="wrapper">
+            <div class="aside">
+              <div id="map" class="gmap" data-zoom="15" data-center="98 Norman Grove, London, United Kingdom" style="position: relative; background-color: rgb(229, 227, 223); overflow: hidden;">
+                <div class="six columns">
+<div class="block end">
+</div>
+  </div>
+</div>
+</div>
+
+        <section id="main">
+            <article>
+                <h2>Contact With Me</h2>
+                       </div>
+                          <div id="contact-wrapper">
+                              <form id="contactform" action="javascript:alert('success!');">
+                                       <fieldset class="info_fieldset">
+                                                  <div id="note"></div>
+                                        </fieldset>
+                                        <label>Name</label>
+                                               <input class="textbox" type="text" name="name" value="" /><br />
+                                        <label>e-mail</label>
+                                               <input class="textbox" type="text" name="email" value="" /><br />
+                                        <label>Message</label>
+                                               <textarea class="textbox" name="message" rows="5" cols="25" ></textarea><br />
+                                               <input class="button" type="submit" value="Send Message" />
+                                    </form>
+                                </div>
+                            </div>  
+            </article>
+                </section>
+      
+    
+    </div><!-- /wrapper -->
+        <footer id="footer">
+        </footer>
+     </div><!-- /outerWrapper -->   
+    
+ </body>
+
+
+
+
+
+ </html>
+
+
+

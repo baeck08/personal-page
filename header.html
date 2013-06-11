@@ -12,6 +12,7 @@
 
 
 
+
 #header { 
   margin: 0 auto;
 	width:950px;
@@ -27,7 +28,7 @@
     text-align: center;
    }
 
-#nav {
+#menu {
   margin: 0 auto;
   width: 950px;
   border-top:6px dotted #33CCCC;
@@ -36,11 +37,11 @@
   text-align: center;
   }
 
-#nav li {
+#menu li {
   display:inline;
 }
 
-#nav a {
+#menu a {
   text-decoration: none;
   font-size: 30px;
   color: #FF6666;
@@ -61,7 +62,7 @@
   width:950px;
  
 }
-#menu{
+#aside{
   margin: 0 auto;
   background-image: url(17349_1251594408385_799031_n.jpg);
   border-style: ridge;
@@ -74,9 +75,10 @@
   }
 
 #main {
-  float:left;
+  float: left;
   width: 750px;
-  padding-left:10px;
+  padding-left: 10px;
+ 
 
   } 
 
@@ -92,25 +94,26 @@ p {
  <body>
 <div id="outerWrapper">
     <div id="header">
-       <a href="header.html">Brittany Eck</a>
+       <a class="header_title" href="header.html">Brittany Eck</a>
         </div> <!--/header --> 
         
-    	<div id="nav">
-			<a href="header.html">About Me</a>
-			<a href="entry.html">Artwork</a>
-			<a href="entry.html">Photo Gallery</a>
-      <a href="entry.html">Contact Me</a>
-		    </div>	<!--/nav-->
+    	<nav id="menu">
+			<a class="menu_item" href="header.html">About Me</a>
+			<a class="menu_item" href="entry.html">Artwork</a>
+			<a class="menu_item" href="entry.html">Photo Gallery</a>
+      <a class="menu_item" href="contact_form.html">Contact Me</a>
+		    </nav>	<!--/nav-->
           <div id="wrapper">
-        <div id="menu">
-        </div><!--/menu -->
+        <div id="aside">
+
+        </div><!--/aside -->
 
         <section id="main">
             <article>
               
-        <p> I am a sarcastic, as well as sassy, 22 year old born and raised in the small town of Beloit, Kansas. I grew up with an older brother who attended Fort Hays State University, a mother who is a 5th Grade teacher, and a father who is a traveling salesman for Beottcher Supply. I absolutely adore my family and our get togethers with my 20 some cousins- we are too much fun! I am a true K-State fan who bleeds purple and am very much into sports including Football, Basketball, Volleyball, and Golf which may surprise a few. On another note I enjoy long walks on the beach... totally kidding. I actually enjoy drawing, movie watching, reading books, country music and most importantly summers spent at the lake! There's a ton more, but I won't completely bore you.</p>
+        <p class="article_content"> I am a sarcastic, as well as sassy, 22 year old born and raised in the small town of Beloit, Kansas. I grew up with an older brother who attended Fort Hays State University, a mother who is a 5th Grade teacher, and a father who is a traveling salesman for Beottcher Supply. I absolutely adore my family and our get togethers with my 20 some cousins- we are too much fun! I am a true K-State fan who bleeds purple and am very much into sports including Football, Basketball, Volleyball, and Golf which may surprise a few. On another note I enjoy long walks on the beach... totally kidding. I actually enjoy drawing, movie watching, reading books, country music and most importantly summers spent at the lake! There's a ton more, but I won't completely bore you.</p>
 
-        <p> Recently, I am graduated from Kansas State University with a degree in Management Information Systems.  I am currently working for the Office of Mediated Education at Kansas State as a student web developer. </p> 
+        <p class="article_content"> Recently, I am graduated from Kansas State University with a degree in Management Information Systems.  I am currently working for the Office of Mediated Education at Kansas State as a student web developer. </p> 
         
             </article>
                 </section>
