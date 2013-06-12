@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+	<meta charset="utf-8">
+  <title>Artwork</title>
+
+<link href='http://fonts.googleapis.com/css?family=Sail' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Italianno' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Over+the+Rainbow' rel='stylesheet' type='text/css'>
+<style type="text/css">
+
+
+
+
+#header { 
+  margin: 0 auto;
+	width:950px;
+	height:130px;
+		}
+
+#header a{
+    text-decoration: none;
+    color: #FF6666;
+    padding-left: 260px;
+    font-size: 115px;
+    font-family: 'Italianno', cursive;
+    text-align: center;
+   }
+
+#menu {
+  margin: 0 auto;
+  width: 950px;
+  border-top:6px dotted #33CCCC;
+  border-bottom: 6px dotted #33CCCC;
+  border-radius:20px;
+  text-align: center;
+  }
+
+#menu li {
+  display:inline;
+}
+
+#menu a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #FF6666;
+  font-family: 'Sail', cursive;
+  display:inline-block;
+  padding:10px;
+      }
+
+#outerWrapper {
+  margin: 0 auto;
+  height: 950px;
+  width: 950px;
+}
+
+#wrapper {
+  margin: 0 auto;
+  padding: 20px 0px 0px 20px; 
+  width:950px;
+ 
+}
+#aside{
+  margin: 0 auto;
+  background-image: url(17349_1251594408385_799031_n.jpg);
+  border-style: ridge;
+  border-width:5px;
+  background-repeat: none;
+  padding-top: 10px;
+  width: 180px;
+  height: 230px;
+  float:left;
+  }
+
+#main {
+  float: left;
+  width: 750px;
+  padding-left: 10px;
+ 
+
+  } 
+
+p {
+  font-family: 'Over the Rainbow', cursive;
+  font-size: 17px;
+  }
+
+/* =============================================================================
+9. Portfolio Panel
+============================================================================= */
+.portfolio {
+        width:100%;
+        padding:0;
+        margin-left:5px;
+}
+/* Portfolio Items */
+.portfolio li {
+    list-style:none;
+        float: left;  
+        margin-bottom: 10px;
+}
+.portfolio a {
+    display: block;
+        text-decoration: none;
+}
+.portfolio h3 {
+    color:#E6906D;
+}
+.portfolio img {  
+    vertical-align: bottom;
+        width: 100%;
+        padding:0;
+        margin:0;
+}
+/* Portfolio Filter */
+ul.filter {
+        overflow:hidden;
+        padding:0;
+        margin-top:20px;
+        margin-bottom:20px;
+        margin-right:15px;
+        margin-left:20px;
+        list-style:none;
+}
+ul.filter li a {
+    float: right;
+        font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+    font-size: 12px;
+    padding: 5px 7px 5px 7px;
+    margin-top: 6px;
+        margin-left:5px;
+    line-height: 13px;
+    background: #cfd0ca;
+        border-radius:20px;
+    text-decoration: none;
+     -webkit-transition: all 80ms ease-in ; /* property duration timing-function delay */
+       -moz-transition: all 80ms ease-in ; /* property duration timing-function delay */
+          transition: all 80ms ease-in ; /* property duration timing-function delay */
+}
+.filter a:hover {
+    color:#FFF;
+        background: #E6906D;
+}
+.filter .current a {
+        color:#FFF;
+        background: #E6906D;
+}
+/* 3D Boxes Rotate Styles */
+.rollover {
+    position: relative;
+    width: 100%;
+    height:100%;
+    display: block;
+    float:left;
+}
+.short{
+        width:100%;
+        height:100%;
+}
+.front {
+    z-index: 2;
+    position: relative;
+        padding:5px;
+    background: #fff;
+}
+.back {
+    z-index: 1;
+    position: absolute;
+        padding:0 10px;
+        margin-top:-95% !important;
+}
+.rollover:hover .back,
+.rollover:focus .back {
+    z-index: 2;
+}
+.rollover:hover .front,
+.rollover:focus .front {
+    z-index: 1;
+}
+.fade .rollover .front {
+    opacity: 1;
+    -webkit-transition: 1s;
+     -moz-transition: 1s;
+      -ms-transition: 1s;
+       -o-transition: 1s;
+          transition: 1s;
+}
+.fade .rollover .back {
+    opacity: 0;
+    -webkit-transition: 1s;
+     -moz-transition: 1s;
+      -ms-transition: 1s;
+       -o-transition: 1s;
+          transition: 1s;
+}
+.fade .rollover:hover .front,
+.fade .rollover:focus .front {
+    opacity: 0;
+        -webkit-transform: translate3d(0,0,1px);
+     -moz-transform: translate3d(0,0,1px);
+      -ms-transform: translate3d(0,0,1px);
+       -o-transform: translate3d(0,0,1px);
+          transform: translate3d(0,0,1px);
+}
+.fade .rollover:hover .back,
+.fade .rollover:focus .back {
+    opacity: 1;
+}
+.flip .cube {
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+       -o-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+    -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+     -moz-transform: rotateX(0) rotateY(0) rotateZ(0);
+      -ms-transform: rotateX(0) rotateY(0) rotateZ(0);
+       -o-transform: rotateX(0) rotateY(0) rotateZ(0);
+          transform: rotateX(0) rotateY(0) rotateZ(0);
+    -webkit-transition: 0.8s;
+     -moz-transition: 0.8s;
+      -ms-transition: 0.8s;
+       -o-transition: 0.8s;
+          transition: 0.8s;
+}
+.flip .front {
+    -webkit-transform: translate3d(0,0,1px);
+     -moz-transform: translate3d(0,0,1px);
+      -ms-transform: translate3d(0,0,1px);
+       -o-transform: translate3d(0,0,1px);
+          transform: translate3d(0,0,1px);
+}
+.flip .back {
+    -webkit-transform: rotateY(180deg) translate3d(0,0,0);
+     -moz-transform: rotateY(180deg) translate3d(0,0,0);
+      -ms-transform: rotateY(180deg) translate3d(0,0,0);
+       -o-transform: rotateY(180deg) translate3d(0,0,0);
+          transform: rotateY(180deg) translate3d(0,0,0);
+}
+.flip .rollover:hover .cube,
+.flip .rollover:focus .cube {
+    -webkit-transform: rotateY(180deg);
+     -moz-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+       -o-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.box .front {
+    -webkit-transform: translate3d(0,0,60px) scale(1,1);
+     -moz-transform: translate3d(0,0,60px) scale(1,1);
+      -ms-transform: translate3d(0,0,60px) scale(1,1);
+       -o-transform: translate3d(0,0,60px) scale(1,1);
+          transform: translate3d(0,0,60px) scale(1,1);
+}
+.box .back {
+    -webkit-transform: rotateY(180deg) translate3d(0,0,60px)  scale(1,1);
+     -moz-transform: rotateY(180deg) translate3d(0,0,60px) scale(1,1);
+      -ms-transform: rotateY(180deg) translate3d(0,0,60px)  scale(1,1);
+       -o-transform: rotateY(180deg) translate3d(0,0,60px)  scale(1,1);
+          transform: rotateY(180deg) translate3d(0,0,60px)  scale(1,1);
+}
+
+
+</style>
+
+</head>
+ <body>
+<div id="outerWrapper">
+    <div id="header">
+       <a class="header_title" href="header.html">Brittany Eck</a>
+        </div> <!--/header --> 
+        
+      <nav id="menu">
+      <a class="menu_item" href="header.html">About Me</a>
+      <a class="menu_item" href="artwork.html">Artwork</a>
+      <a class="menu_item" href="entry.html">Photo Gallery</a>
+      <a class="menu_item" href="contact_form.html">Contact Me</a>
+        </nav>  <!--/nav-->
+          <div id="wrapper">
+
+        <section id="main">
+            <article>
+              <!-- Portfolio Subpage -->
+                <div id="portfolio" class="step" data-x="26000" data-y="2800" data-rotate="-30" data-scale="1">
+                    <div id="jms-content4">
+
+                        <div class="sixteen columns">
+                            <div class="block2">
+
+                                <!-- Portfolio Filter -->
+                                <ul class="filter">
+                                   <li class="current all"><a href="#">All</a></li>
+                                   <li class="webdesign"><a href="#">Web Design</a></li>
+                                   <li class="webdevelopment"><a href="#">Web Development</a></li>
+                                </ul>
+                                <!-- End Portfolio Filter -->
+
+
+                                <!-- Portfolio Items -->
+                                <ul class="portfolio group">
+
+
+                                   <!-- Portolio Item 1 -->
+                                   <li class="item four columns omega" data-id="id-1" data-type="webdevelopment" >
+                                      <a href="images/portfolio_images/big/image_1.jpg" data-rel="prettyPhoto[portfolio]">
+                                        <div class="flip box fade">
+                                            <div class="rollover">
+                                                <div class="cube">
+                                                    
+                                                    <!-- Portfolio Item 1 Image -->
+                                                    <figure class="front">
+                                                           <img src="images/portfolio_images/image_1.jpg" alt=""/>
+                                                    </figure><!--front-->
+                                                    <!-- End Portfolio Item 1 Image -->
+                                                  
+                                                    <!-- Back Side. Portfolio Item 1 Description -->
+                                                    <section class="back">
+                                                    <div class="back-wrap">
+                                                        <h3>Sed sed orci risus</h3>
+                                                        <p>Proin eu purus purus, eu viverra nisi. Vestibulum tincidunt consectetur diam, at iaculis ipsum aliquet in.</p>  
+                                                    </div><!--back-wrap-->
+                                                    </section><!--back-->
+                                                    <!-- End Back Side. Portfolio Item 1 Description -->
+                                            
+                                                </div><!--cube-->
+                                            </div><!--rollover-->
+                                        </div><!--flip-->
+                                      </a>
+                                   </li>
+                                   <!-- End Portfolio Item 1 -->
+
+                                 
+        
+            </article>
+                </section>
+      
+    
+    </div><!-- /wrapper -->
+        <footer id="footer">
+        </footer>
+     </div><!-- /outerWrapper -->   
+    
+ </body>
+
+
+
+
+
+ </html>
