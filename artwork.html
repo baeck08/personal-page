@@ -91,16 +91,20 @@ p {
   font-family: 'Over the Rainbow', cursive;
   font-size: 17px;
   }
+
 #gallery{
-  border: 3px groove #C0C0C0;
-  margin: 0 30px 0 85px;
+  margin: 0 auto;
+  border-top: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
+  overflow: auto;
+  border-radius: 10px;
 
 }
 
 div.img
-{
-  margin: 15px;
-  border: 3px solid #A8A8A8 ;
+{ 
+  margin:10px 15px 15px 70px;
+  border: 5px solid #808080  ;
   height: auto;
   width: auto;
   float: left;
@@ -108,7 +112,7 @@ div.img
 div.img img
 {
   display: inline;
-  margin: 2px;
+  margin: 0 auto;
   text-align: center;
  
 }
@@ -139,9 +143,10 @@ div.desc
           <div id="wrapper">
 
          <article id="article">
-               <p class="article_content"> Find me in a class, and you will see me doodling like never before.  I have came out of each year with notebooks covered in random drawings every since gradeschool. I have always enjoyed drawing and explored more of it in high school as well as with stained glass and pottery.  Most of these below were done in high school, mostly during my senior year.  There are only a few I have done during college that I have done during my free time.</p>
+               <p class="article_content"> Find me in a class, actually just put paper in front of me, and you will see me doodling like never before.  I have came out of each school year with notebooks covered in random drawings every since gradeschool. I have always enjoyed drawing and explored more of it in high school as well as with stained glass and pottery.  Most of these below were done in high school, mostly during my senior year.  There are only a few I have done during college that I have done during my free time.</p>
 
             </article> 
+            <div id="galleryWrapper">
         <section id="gallery">
               <div class="img">
                   <a target="_blank" href="klematis_big.htm"><img src="images/baseball.jpg" alt="Klematis" width="200" height="200"></a>
@@ -173,8 +178,8 @@ div.desc
                           </div>
                 </section>
                </div><!-- /wrapper -->
+                </div><!-- /galleryWrapper -->
 
-               
         <footer id="footer">
         </footer>
      </div><!-- /outerWrapper -->   
